@@ -1,0 +1,7 @@
+---
+- hosts: local
+  connection: local
+  roles:
+  - facts
+  - nodejs
+  - preferences-server-data-loader
