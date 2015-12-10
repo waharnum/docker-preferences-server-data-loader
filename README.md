@@ -5,7 +5,7 @@ Builds a [sidecar/sidekick container](http://blog.kubernetes.io/2015/06/the-dist
 
 ## Building
 
-    - `docker build -t gpii/preferences-server-data-loader .`
+- `docker build -t gpii/preferences-server-data-loader .`
 
 ## Running
 
