@@ -1,4 +1,4 @@
-FROM gpii/universal
+FROM gpii/universal:review4
 
 WORKDIR /etc/ansible/playbooks
 
@@ -6,7 +6,7 @@ COPY ansible/* /etc/ansible/playbooks/
 
 RUN ansible-galaxy install -r requirements.yml
 
-RUN ansible-playbook build.yml --tags "install,configure"
+RUN ansible-playbook build.yml --tags "configure"
 
 COPY start.sh /usr/local/bin/start.sh
 

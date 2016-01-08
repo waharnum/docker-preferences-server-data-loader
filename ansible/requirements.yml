@@ -3,3 +3,4 @@
 # - src: https://github.com/idi-ops/ansible-nodejs
 - src: https://github.com/waharnum/ansible-preferences-server-data-loader
   name: preferences-server-data-loader
+  version: origin/review4
