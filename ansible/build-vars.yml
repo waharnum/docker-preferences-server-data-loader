@@ -2,3 +2,4 @@
 # https://github.com/gpii-ops/ansible-preferences-server-data-loader/blob/master/defaults/main.yml
 # for what can be configured in a build
 nodejs_app_git_repo: https://github.com/gpii/universal.git
+nodejs_app_git_branch: review4
