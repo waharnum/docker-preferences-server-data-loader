@@ -17,5 +17,5 @@ Builds a [sidecar/sidekick container](http://blog.kubernetes.io/2015/06/the-dist
 - running requires a couchdb instance accessible to the container
 - containerized example (including running Preferences Server container)
   - `docker run -d -p 5984:5984 --name couchdb klaemo/couchdb`
-  - `docker run --rm -l couchdb -e COUCHDB_HOST_ADDRESS=couchdb:5984 -e CLEAR_INDEX=true gpii/preferences-server-data-loader`
-  - `docker run --name prefserver -d -p 8082:8082 -l couchdb -e NODE_ENV=preferencesServer.production -e COUCHDB_HOST_ADDRESS=couchdb:5984 -e gpii/preferences-server`
+  - `docker run --rm --link couchdb -e COUCHDB_HOST_ADDRESS=couchdb:5984 -e CLEAR_INDEX=true gpii/preferences-server-data-loader`
+  - `docker run --name prefserver -d -p 8082:8082 --link couchdb -e NODE_ENV=preferencesServer.production -e COUCHDB_HOST_ADDRESS=couchdb:5984 gpii/preferences-server`
