@@ -6,3 +6,4 @@
 preferences_server_data_loader_couchdb_host_address: "{{ lookup('env', 'COUCHDB_HOST_ADDRESS') | default('localhost:5984',true) }}"
 preferences_server_data_loader_cleanup_after: false
 preferences_server_data_loader_clear_index: "{{ lookup('env', 'CLEAR_INDEX') | default(false,true) }}"
+nodejs_app_install_dir: /opt/gpii/node_modules/{{ nodejs_app_name }}
